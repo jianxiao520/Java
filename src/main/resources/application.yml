@@ -1,0 +1,25 @@
+# 启动端口
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: jianxiao
+  mail:
+    protocol: smtp
+    host: smtp.163.com
+    port: 25 # 网易默认端口
+    username: 18929554453@163.com # 发件人邮箱
+    password: SCZPQBYJRNZIPSKH # 授权码
+    default-encoding: utf-8
+#    properties:
+#      mail:
+#        debug: true # 完整打印邮件发送过程日志
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # 开启驼峰映射
+server:
+  port: 8888
